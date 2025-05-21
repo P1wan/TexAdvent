@@ -1,0 +1,34 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs and coverage
+*.log
+.coverage*
+htmlcov/
+.tox/
+.pytest_cache/
+
+# IDE directories
+.idea/
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Sphinx build directory
+/docs/_build/
+
