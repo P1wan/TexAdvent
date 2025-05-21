@@ -27,12 +27,21 @@ TexAdvent aims to provide a lightweight set of classes and utilities for creatin
    pip install -r requirements.txt
    ```
 3. **Run the Demo**
+   The repository now provides a launcher script at `main.py`. It will list all
+   available projects inside the `game/` folder and run the one you choose.
    ```bash
-   python -m game.demo
+   python main.py
    ```
-   *(Demo game not yet implemented)*
+   You can also run a specific project directly, for example the stub demo game:
+   ```bash
+   python game/demo/main.py
+   ```
+   *(Demo game only prints a placeholder message for now)*
 
-## Features
+## Planned Features
+
+The engine is still in an early state. The following items outline the
+initial functionality we intend to implement:
 
 - Rooms and connections to represent the game world
 - Player state with location and inventory
@@ -45,8 +54,12 @@ TexAdvent aims to provide a lightweight set of classes and utilities for creatin
 ## Project Structure
 
 ```
-engine/   # core classes and parser
-game/     # example adventure using the engine
+main.py          # launcher that lets you choose a game
+engine/          # core classes, parser and manual tests
+    test.py      # simple script for experimenting with the engine
+game/            # projects built with the engine
+    demo/        # stub demo adventure
+        main.py  # entry point for the demo
 ```
 
 ## Extending the Framework
@@ -57,7 +70,13 @@ game/     # example adventure using the engine
 
 ## Example Game
 
-A small demo adventure will be included to showcase usage.
+A stub demo adventure lives in `game/demo`. It currently only prints a
+placeholder message but demonstrates how to structure a project using the
+engine. Run it with:
+
+```bash
+python main.py
+```
 
 ## Contributing
 
